@@ -1,3 +1,8 @@
+// Task
+
+//You're given a single word. Your task is to swap the halves. 
+//If the word has an uneven length, leave the character in the middle at that position and swap the chunks around it.
+
 function reverseByCenter(s){
   // ...
   var slicer = s.length % 2 === 0 ? s.length / 2 : (s.length-1) / 2; 
