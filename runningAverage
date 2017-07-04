@@ -1,0 +1,12 @@
+// Create a function running_average() that returns a callable function object. 
+// Update the series with each given value and calculate the current average.
+
+function runningAverage() {
+  var avg = 0;
+  var called = 0;
+  return function (val){
+    avg += val;
+    called++
+    return Math.round((avg / called) * 100) / 100 
+  } 
+}
